@@ -1,0 +1,8 @@
+<div class="hijo">
+    <h2>Componente Hijo</h2>
+    <p>La bebida de hoy es: <strong>{{bebida}}</strong></p>
+    <label for="bebida-input">Agregar una bebida: </label>
+    <input type="text"  id="bebida-input" #nuevaBebida>
+    <button (click)="agregarNuevaBebida(nuevaBebida.value);nuevaBebida.value=''">Agregar</button>
+</div>
+
